@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AUMasta Global | Clean Protein. Pure Plants.</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link rel="icon" type="image/png" href="favicon.png">
+
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#5B8C5A", 
+              accent: "#C2A36C", 
+              "background-light": "#FDFBF7", 
+              "background-dark": "#121212",
+            },
+            fontFamily: {
+              display: ["'Cormorant Garamond'", "serif"],
+              sans: ["'Plus Jakarta Sans'", "sans-serif"], 
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              'xl': '1rem',
+              '2xl': '1.5rem',
+            },
+          },
+        },
+      };
+    </script>
+<style type="text/tailwindcss">
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .dark .glass-nav {
+            background: rgba(18, 18, 18, 0.85);
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .dark .glass-card {
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .logo-curve {
+  display: inline-block;
+  padding: 12px 18px;
+  background: white;           /* background color */
+  border-radius: 40px 40px 40px 40px; /* bottom curve */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.logo-img {
+  height: 40px;
+  object-fit: contain;
+   width: auto;
+  display: block;
+    image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 transition-colors duration-300 font-sans tracking-tight">
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200/50 dark:border-slate-800/50">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center space-x-12">
+<div class="logo-curve">
+  <img src="logo.jpeg" alt="AUMasta Logo" class="logo-img">
+</div>
+<div class="hidden md:flex space-x-10 text-[15px] font-bold tracking-[0.2em] uppercase">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="Soya_Milk_Collection.html">Plant Milks</a>
+<a class="hover:text-primary transition-colors" href="Fresh_Tofu_Collection.html">Fresh Tofu</a>
+<a class="hover:text-primary transition-colors" href="#">Our Story</a>
+</div>
+</div>
+<div class="flex items-center space-x-6">
+
+</button>
+<a href="create-account.html"
+   class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+  <span class="material-symbols-outlined text-[22px]">person</span>
+</a>
+<!-- <button class="relative p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors"> -->
+
+<!-- <span class="absolute top-0 right-0 h-4 w-4 bg-primary text-white text-[9px] font-bold flex items-center justify-center rounded-full"></span> -->
+</button>
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined text-[22px] dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined text-[22px] hidden dark:block">light_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Plant based milk and tofu spread" class="w-full h-full object-cover object-center float-animation" src="bg.png"/>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full py-20">
+<div class="max-w-3xl glass-card p-10 md:p-16 rounded-[2rem] shadow-2xl">
+<span class="inline-block py-1 px-4 rounded-full bg-primary text-white font-bold text-[10px] tracking-[0.2em] uppercase mb-8 shadow-lg">Sustainable Nutrition</span>
+<h1 class="font-display text-7xl md:text-9xl text-white leading-[1] mb-8 drop-shadow-sm">
+                Clean Protein. <br/>
+<span class="text-white italic">Pure Plants.</span>
+</h1>
+<p class="text-xl text-white/90 mb-12 leading-relaxed max-w-xl font-medium drop-shadow-md">
+                Experience the natural goodness of locally sourced, non-GMO soy, almonds, and coconuts. Our plant-based essentials are crafted for your health and the planet.
+            </p>
+<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+<button class="bg-primary text-white px-12 py-5 rounded-full font-bold hover:bg-[#4a7349] transition-all transform hover:-translate-y-1 shadow-xl shadow-primary/30 text-sm tracking-widest uppercase">
+                    Shop Now
+                </button>
+<button class="bg-white text-slate-900 px-12 py-5 rounded-full font-bold hover:bg-slate-100 transition-all transform hover:-translate-y-1 shadow-xl text-sm tracking-widest uppercase">
+                    Learn More
+                </button>
+</div>
+<div class="mt-20 flex flex-wrap gap-8 items-center border-t border-white/20 pt-10">
+<div class="flex items-center space-x-3 text-white">
+<span class="material-symbols-outlined text-primary bg-white rounded-full p-1 text-sm">eco</span>
+<span class="text-[12px] font-bold uppercase tracking-widest">100% Organic</span>
+</div>
+<div class="flex items-center space-x-3 text-white">
+<span class="material-symbols-outlined text-primary bg-white rounded-full p-1 text-sm">verified</span>
+<span class="text-[12px] font-bold uppercase tracking-widest">Non-GMO Verified</span>
+</div>
+<div class="flex items-center space-x-3 text-white">
+<span class="material-symbols-outlined text-primary bg-white rounded-full p-1 text-sm">package_2</span>
+<span class="text-[12px] font-bold uppercase tracking-widest">Eco-Packaging</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-40 bg-white dark:bg-slate-900/50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-display text-6xl md:text-7xl mb-6">Our Staples</h2>
+<p class="text-slate-500 dark:text-slate-400 font-medium text-lg italic">Nutritious, delicious, and made with artisanal care.</p>
+</div>
+<a class="text-primary font-bold flex items-center group text-sm tracking-[0.2em]" href="#">
+                VIEW CATALOG <span class="material-symbols-outlined ml-3 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-3xl mb-8 bg-slate-50 dark:bg-slate-800 aspect-[4/5] shadow-sm hover:shadow-2xl transition-all duration-700">
+<img alt="Soy Milk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBpjVMG-oQ3eh8Pd5NUONsW-zJzdka90j_MFSA8YE979S996Dvqn6b_UxHl4-J9ZPrWHUDFMlw_otQFQnGYvVpOuZB_7JNp6qEjzLCR1yt8b1oNyIqG5cVIYPdG3hcG-JrEJRGQJBLA5Unz8x-IQUGtoTFkQnPDdfDzNDq4t1mqp33E7Qwbz-DZCxfsbE0LsoScx-qVQg0TD-3V9NzsSWUXVUy6A3NfP_fVznaGderMxLtC8hcUZCW5URSCXD6tM7SPr_8DNAYHrc"/>
+<div class="absolute top-6 right-6">
+<span class="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-6 py-2 rounded-full text-[11px] font-bold tracking-widest uppercase text-primary shadow-lg">Pure Soy</span>
+</div>
+</div>
+<div class="px-2">
+<p class="text-primary font-bold text-sm tracking-wider mb-2"></p>
+<h3 class="text-3xl font-display mb-3">Artisanal Soy Milk</h3>
+<p class="text-slate-500 dark:text-slate-400 text-[16px] mb-8 leading-relaxed font-medium">Slow-pressed and naturally creamy with 8g of protein per serving.</p>
+<a href="Soya_Milk_Collection.html"><button class="text-[11px] font-bold text-slate-900 dark:text-white uppercase tracking-[0.2em] group-hover:text-primary transition-colors border-b-2 border-slate-200 dark:border-slate-800 group-hover:border-primary pb-2">Shop Category</button></a>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-3xl mb-8 bg-slate-50 dark:bg-slate-800 aspect-[4/5] shadow-sm hover:shadow-2xl transition-all duration-700">
+<img alt="Fresh Tofu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4LnmkXC78-g1oMttu6SJkQCWJAx7M276upjEXR3vpJ9l_-Mzn2vbBn6k47GsvKmt3pmpojjztpBdtLu_-FnDbhUSVSQp5G3MYP8zJt2XIfTDOFh8QBJTkVaE2-vkOabgjvdYeUU_R2NSW6cYeJV1BJ_zv5Yjxj7qFXQ-Ca6nGxcRW6KCasJP7pS9TMSTxOQoKKPyQGX6y_lOuPf6GWzAZhEFnEOBVGvC30etOnmFbUKJulTzyQljDulAXBh4_5YDrJlPbzZ-ByAI"/>
+<div class="absolute top-6 right-6">
+<span class="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-6 py-2 rounded-full text-[11px] font-bold tracking-widest uppercase text-primary shadow-lg">Firm &amp; Fresh</span>
+</div>
+</div>
+<div class="px-2">
+<p class="text-primary font-bold text-sm tracking-wider mb-2"></p>
+<h3 class="text-3xl font-display mb-3">Small-Batch Tofu</h3>
+<p class="text-slate-500 dark:text-slate-400 text-[16px] mb-8 leading-relaxed font-medium">Hand-crafted using traditional methods for the perfect texture.</p>
+ <a href="Fresh_Tofu_Collection.html"> <button class="text-[11px] font-bold text-slate-900 dark:text-white uppercase tracking-[0.2em] group-hover:text-primary transition-colors border-b-2 border-slate-200 dark:border-slate-800 group-hover:border-primary pb-2">Shop Category</button></a>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-3xl mb-8 bg-slate-50 dark:bg-slate-800 aspect-[4/5] shadow-sm hover:shadow-2xl transition-all duration-700">
+<img alt="Nut Milks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHz-iZ_KmnFdsRjXB1jjBiOIzhoF_u6YaJhYadqtAdrKE0F8X4L5FXhsPHVdhDnirMFEM1T5aS1F31tiXMwyFfV4kY5Oq2FFKkymj_jTyUfOwkvqbsOpovwnEZDCNhWa0LGuegmGPQojVzJ67r30v_z1qHKzUs80RNDaPyVq6dDID7HcQK6sZp6Q_F-Mw_faqKEl3gxAwE5G8QVEuOnm0Mzx22hS-u6Qi92tCzGRzxG1cMGt69zzDCSgYs7sb7P3V556jBS4Dnu6g"/>
+<div class="absolute top-6 right-6">
+<span class="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-6 py-2 rounded-full text-[11px] font-bold tracking-widest uppercase text-primary shadow-lg">Almond &amp; Coconut</span>
+</div>
+</div>
+<div class="px-2">
+<p class="text-primary font-bold text-sm tracking-wider mb-2"></p>
+<h3 class="text-3xl font-display mb-3">Exotic Nut Blends</h3>
+<p class="text-slate-500 dark:text-slate-400 text-[16px] mb-8 leading-relaxed font-medium">Lightly sweetened with natural dates for a guilt-free sip.</p>
+<button class="text-[11px] font-bold text-slate-900 dark:text-white uppercase tracking-[0.2em] group-hover:text-primary transition-colors border-b-2 border-slate-200 dark:border-slate-800 group-hover:border-primary pb-2">Shop Category</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-40 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+<div class="relative">
+<div class="aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl float-animation">
+<img alt="Healthy lifestyle" class="w-full h-full object-cover" src="Life Style.png"/>
+</div>
+<div class="absolute -bottom-12 -right-12 bg-white dark:bg-slate-800 p-10 rounded-[2rem] shadow-2xl max-w-sm hidden md:block border border-slate-100 dark:border-slate-700">
+<p class="italic text-slate-700 dark:text-slate-300 mb-8 font-medium text-lg leading-relaxed font-display">"AUMasta has completely changed my breakfast routine. The soy milk is incredibly rich and authentic."</p>
+<div class="flex items-center space-x-4">
+<div class="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg shadow-lg">TP</div>
+<div>
+<h4 class="text-sm font-bold tracking-wider">Mr. Tinku Purohit</h4>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Health Enthusiast</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="font-display text-6xl md:text-7xl mb-16 leading-[1.1]">Empowering Every Life Through Better Food.</h2>
+<div class="space-y-12">
+<div class="flex items-start space-x-8 group">
+<div class="h-16 w-16 rounded-3xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">local_florist</span>
+</div>
+<div>
+<h4 class="text-2xl font-display mb-3">Ethically Sourced</h4>
+<p class="text-slate-500 dark:text-slate-400 font-medium leading-relaxed text-lg">We work directly with family farmers to ensure fair wages and sustainable soil practices.</p>
+</div>
+</div>
+<div class="flex items-start space-x-8 group">
+<div class="h-16 w-16 rounded-3xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">science</span>
+</div>
+<div>
+<h4 class="text-2xl font-display mb-3">Zero Additives</h4>
+<p class="text-slate-500 dark:text-slate-400 font-medium leading-relaxed text-lg">No gums, no fillers, no artificial flavors. Just real food ingredients you can recognize.</p>
+</div>
+</div>
+<div class="flex items-start space-x-8 group">
+<div class="h-16 w-16 rounded-3xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">favorite</span>
+</div>
+<div>
+<h4 class="text-2xl font-display mb-3">Heart Healthy</h4>
+<p class="text-slate-500 dark:text-slate-400 font-medium leading-relaxed text-lg">Cholesterol-free and packed with essential minerals for everyday vitality.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-32 pb-12">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
+<div class="col-span-1">
+<a href="index.html"><img alt="AUMasta Logo" class="h-10 mb-10 object-contain" src="logo.jpeg"/></a>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed font-medium mb-10">
+                    Redefining plant-based nutrition with artisanal care and global vision. Join the movement toward a healthier lifestyle.
+                </p>
+<div class="flex space-x-5">
+<a class="h-11 w-11 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<i class="material-symbols-outlined text-lg">share</i>
+</a>
+<a class="h-11 w-11 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<i class="material-symbols-outlined text-lg">photo_camera</i>
+</a>
+<a class="h-11 w-11 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<i class="material-symbols-outlined text-lg">mail</i>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-[11px] tracking-[0.2em] uppercase mb-10 text-slate-900 dark:text-white">Shop</h5>
+<ul class="space-y-5 text-sm text-slate-500 dark:text-slate-400 font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">Best Sellers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Bundle &amp; Save</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gift Cards</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Subscriptions</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-[11px] tracking-[0.2em] uppercase mb-10 text-slate-900 dark:text-white">About</h5>
+<ul class="space-y-5 text-sm text-slate-500 dark:text-slate-400 font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">Our Mission</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Farmers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Recipes</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-[11px] tracking-[0.2em] uppercase mb-10 text-slate-900 dark:text-white">Newsletter</h5>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-8 font-medium leading-relaxed">Stay updated on new launches and healthy living tips.</p>
+<form class="flex group">
+<input class="w-full bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-l-full px-6 py-3 text-sm focus:ring-primary focus:border-primary font-medium" placeholder="Email address" type="email"/>
+<button class="bg-primary text-white px-8 rounded-r-full hover:bg-[#4a7349] transition-colors flex items-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+</div>
+<div class="pt-10 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold tracking-[0.2em] uppercase text-slate-400">
+<p>© 2024 AUMasta Global. All rights reserved.</p>
+<div class="flex space-x-10 mt-6 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

@@ -1,0 +1,346 @@
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fresh Tofu Collection | AUMasta</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Inter:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link rel="icon" type="image/png" href="favicon.png">
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#003B95", 
+                        accent: "#C2A36C", 
+                        sage: "#7E8C7A",
+                        "background-light": "#FDFBF7", 
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        display: ["'DM Serif Display'", "serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        'DEFAULT': '0.5rem',
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2.5rem',
+                        '4xl': '3.5rem',
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            .glass-nav {
+                background: rgba(253, 251, 247, 0.8);
+                backdrop-filter: blur(8px);
+            }
+            .dark .glass-nav {
+                background: rgba(18, 18, 18, 0.8);
+            }
+            .hero-gradient {
+                background: linear-gradient(135deg, rgba(253, 251, 247, 0.8) 0%, rgba(253, 251, 247, 0.1) 100%);
+            }
+            .dark .hero-gradient {
+                background: linear-gradient(135deg, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.1) 100%);
+            }
+            .curved-divider {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+                transform: rotate(180deg);
+            }
+            .curved-divider svg {
+                position: relative;
+                display: block;
+                width: calc(100% + 1.3px);
+                height: 80px;
+            }
+            .curved-divider .shape-fill {
+                fill: #FFFFFF;
+            }
+            .dark .curved-divider .shape-fill {
+                fill: #0f172a;
+            }
+            .footer-curve {
+                position: absolute;
+                top: -1px;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+            }
+            .footer-curve svg {
+                position: relative;
+                display: block;
+                width: calc(100% + 1.3px);
+                height: 60px;
+            }
+            .footer-curve .shape-fill {
+                fill: #FFFFFF;
+            }
+            .dark .footer-curve .shape-fill {
+                fill: #0f172a;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 transition-colors duration-300">
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200/50 dark:border-slate-800/50">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center space-x-12">
+<a class="flex items-center" href="#">
+<img alt="AUMasta Logo" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ_68J9zMlenawXmQwh8p6KiCamQfcCTaCL0-SGjjM7XWqPi_MNgKRVtAk6ljmZoJdsB86X7Guq9sFCPgo02M_W-hOTU3OsAMQq8FZ_BWN7skmbLoWmFAkCvsQUgCnEdyMRnITPEkGShXvPFkz27Um-5NWQwy4Z1P5dFnUFtnAcA8K0J1QwgX4ZkrdI29Yq0NcDdOQPLS6Pd9tPgRS6QIJy_ekYD71r2JVLFtNgONyHI0UaL9ZEGAO5zWsIv84tU4uldNxibKxgCA"/>
+</a>
+<div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide uppercase">
+<a class="hover:text-sage transition-colors" href="index.html">Home</a>
+<a class="hover:text-sage transition-colors" href="Soya_Milk_Collection.html">Soya Milk</a>
+<a class="text-sage font-bold" href="#">Fresh Tofu</a>
+<a class="hover:text-sage transition-colors" href="#">Our Story</a>
+</div>
+</div>
+<div class="flex items-center space-x-1">
+<button class="p-2.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors flex items-center justify-center text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-xl">person</span>
+</button>
+<button class="relative p-2.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors flex items-center justify-center text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span class="absolute top-1.5 right-1.5 h-4 w-4 bg-sage text-white text-[10px] flex items-center justify-center rounded-full">0</span>
+</button>
+<div class="h-6 w-[1px] bg-slate-200 dark:bg-slate-800 mx-3"></div>
+<button class="p-2.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors flex items-center justify-center text-slate-600 dark:text-slate-300" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined text-xl dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined text-xl hidden dark:block">light_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<section class="relative min-h-[70vh] flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Fresh tofu blocks on a plate" class="w-full h-full object-cover object-center opacity-80 dark:opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw8PVpNN2v_wHEwaWjDqqSDU_Z7ckv0SoVL3U-OqNow0WyDA_LJlEg4RS55MiQ4ywqVzfZvw_GIEY7VpJm3bdQE7FrBemb1og-MhVD1WNOi1jAdu2PmhnuktN5cvjhYboHVX14ekRkOUkr0S3G-nmuDhjl4PIDKylGqBFgKLg7dBUIy5qwvGhhA1KeGUf33yxnIdSQMfyDr8I3txj54Jq0WFxiIWI8rDDlOjQQ2x3y85ivp2DbyRVQ80MyqgZvZo_G9cAcoLwOe04"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full py-20">
+<div class="max-w-2xl">
+<nav class="flex mb-6 text-xs font-medium tracking-widest uppercase text-sage">
+<a class="hover:underline" href="#">Home</a>
+<span class="mx-2 text-slate-400">/</span>
+<span class="text-slate-500">Fresh Tofu Collection</span>
+</nav>
+<h1 class="font-display text-6xl md:text-8xl text-slate-900 dark:text-white leading-[1.1] mb-6">
+                Fresh <br/>
+<span class="text-sage italic">Tofu</span>
+</h1>
+<p class="text-xl font-medium text-slate-700 dark:text-slate-300 mb-2 font-sans tracking-wide">
+                Artisan Crafted. Naturally Pure.
+            </p>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed max-w-lg">
+                Handcrafted using traditional methods and organic non-GMO soybeans. Our tofu is pressed to perfection, delivering a clean, subtle flavor and the ultimate texture for any culinary creation.
+            </p>
+</div>
+</div>
+<div class="curved-divider">
+<svg data-name="Layer 1" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path class="shape-fill" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+</svg>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4">
+<div>
+<h2 class="font-display text-5xl mb-4 text-slate-900 dark:text-white">Our Tofu Collections</h2>
+<p class="text-slate-500 dark:text-slate-400 text-lg">Pure, plant-based protein for every dish.</p>
+</div>
+<div class="flex items-center space-x-4">
+<span class="text-sm font-bold text-slate-400 uppercase tracking-widest">Filter by:</span>
+<select class="bg-transparent border-none text-sm font-bold text-sage focus:ring-0 cursor-pointer uppercase tracking-widest">
+<option>All Texture</option>
+<option>Silken</option>
+<option>Firm</option>
+<option>Extra Firm</option>
+<option>Smoked</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-stretch">
+<div class="group flex flex-col h-full">
+<div class="relative overflow-hidden rounded-4xl mb-8 bg-slate-50 dark:bg-slate-800 aspect-[4/5] shadow-sm hover:shadow-2xl transition-all duration-500">
+<img alt="Firm Silken Tofu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr53FMp9dvqBIKJ8mUvQ2z8Y-BhrKD-SRac_hzskBtnYdvQOoL4lGGyEpXuNg0aw-tVgYjOnSo1GDnpjWMQtOl7fi4Sa2---3-kZBXbI-aKAktIlghkmSPRvE0v6xwxqxaCXIgqiRmEOtrCvmxFtEV4-P23Ma7A0n0eccC0U-RUuU5gzm3bf4H9Zsde9Y6v9mXvwIXyvZ90v2K6Q7xKto4OuUDYaWcnFc2gdS0PJ0qtZ8CaMbFVK9HRqxDKZrmWQN-j9_ypmhUAL8"/>
+<div class="absolute bottom-8 left-8">
+<span class="bg-white/95 dark:bg-slate-900/95 backdrop-blur px-5 py-2 rounded-full text-xs font-bold tracking-widest uppercase text-sage shadow-sm">Soft &amp; Smooth</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<h3 class="text-2xl font-display mb-2 text-slate-900 dark:text-white">Firm Silken Tofu</h3>
+<p class="text-slate-500 dark:text-slate-400 mb-6 leading-relaxed flex-grow">Velvety smooth texture that holds its shape. Perfect for delicate soups, desserts, or cold dishes.</p>
+<div class="flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold text-slate-900 dark:text-white">$4.49</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="bg-sage text-white py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-opacity-90 transition-all shadow-md">
+                                Buy Now
+                            </button>
+<button class="border border-sage text-sage py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-sage hover:text-white transition-all">
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<div class="group flex flex-col h-full">
+<div class="relative overflow-hidden rounded-4xl mb-8 bg-slate-50 dark:bg-slate-800 aspect-[4/5] shadow-sm hover:shadow-2xl transition-all duration-500">
+<img alt="Extra Firm Sprouted Tofu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT6oi-_o_yngwXn0j1ZK84JS7SXeqMM50igG_UNZMCbMCxgUoG--OcDbY6i2ucZlk23tX_drIeDVdYEtL3nvCm_gG9UAwuz4gFV0qlNmCjvZML1rjooZsF5oYlBuVR3nxS_At0lfo76ptz7F5W5DciuI_rJxRaZ8MypINjmXIyoJOJun5IJ9yzbG4Hpd4MLJQFIMnv488zbt7KHCnpQUPgnxTfn_LFJBuVd9GxUUDr8bnghcjE6PRpvY2GOaW15IeoQ145HpqskcA"/>
+<div class="absolute bottom-8 left-8">
+<span class="bg-white/95 dark:bg-slate-900/95 backdrop-blur px-5 py-2 rounded-full text-xs font-bold tracking-widest uppercase text-sage shadow-sm">High Protein</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<h3 class="text-2xl font-display mb-2 text-slate-900 dark:text-white">Extra Firm Sprouted</h3>
+<p class="text-slate-500 dark:text-slate-400 mb-6 leading-relaxed flex-grow">Made with sprouted soybeans for enhanced nutrition. Dense texture ideal for stir-frying and grilling.</p>
+<div class="flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold text-slate-900 dark:text-white">$4.99</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="bg-sage text-white py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-opacity-90 transition-all shadow-md">
+                                Buy Now
+                            </button>
+<button class="border border-sage text-sage py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-sage hover:text-white transition-all">
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<div class="group flex flex-col h-full">
+<div class="relative overflow-hidden rounded-4xl mb-8 bg-slate-50 dark:bg-slate-800 aspect-[4/5] shadow-sm hover:shadow-2xl transition-all duration-500">
+<img alt="Smoked Artisanal Tofu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Jbw97DoKnNeMgrgB9FLAbdLJ59QL4iDlaZJaXRmyvexd3FlmSwo3HYvw1FXvYfS_2ft4ijoA9sYQme9UMu3Sh76qNgjimEPk3U0b42iz_Mm0jIjxLQKocyOT-YjwxC376OzF-27KVWSk8UCXrGCMHg6M5jZPFdi2RtwLjLxbCp1oc0gTiaJHua9QiEB_P3TF_PidI6WCeHIqhONCvJevEsytW2ycW6_jFwbgnSwXJuyyLcCt9_v0mCsy5zNnc6qW8NZRpW5Pces"/>
+<div class="absolute bottom-8 left-8">
+<span class="bg-white/95 dark:bg-slate-900/95 backdrop-blur px-5 py-2 rounded-full text-xs font-bold tracking-widest uppercase text-sage shadow-sm">Wood Smoked</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<h3 class="text-2xl font-display mb-2 text-slate-900 dark:text-white">Smoked Artisanal</h3>
+<p class="text-slate-500 dark:text-slate-400 mb-6 leading-relaxed flex-grow">Slow-smoked over natural beechwood. Adds a rich, savory depth to salads, sandwiches, and grain bowls.</p>
+<div class="flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold text-slate-900 dark:text-white">$5.99</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="bg-sage text-white py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-opacity-90 transition-all shadow-md">
+                                Buy Now
+                            </button>
+<button class="border border-sage text-sage py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-sage hover:text-white transition-all">
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-sage/5 dark:bg-slate-800/50 rounded-4xl p-12 md:p-20 flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<img alt="Traditional tofu making process" class="rounded-3xl shadow-xl w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4LnmkXC78-g1oMttu6SJkQCWJAx7M276upjEXR3vpJ9l_-Mzn2vbBn6k47GsvKmt3pmpojjztpBdtLu_-FnDbhUSVSQp5G3MYP8zJt2XIfTDOFh8QBJTkVaE2-vkOabgjvdYeUU_R2NSW6cYeJV1BJ_zv5Yjxj7qFXQ-Ca6nGxcRW6KCasJP7pS9TMSTxOQoKKPyQGX6y_lOuPf6GWzAZhEFnEOBVGvC30etOnmFbUKJulTzyQljDulAXBh4_5YDrJlPbzZ-ByAI"/>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-display text-4xl md:text-5xl mb-6 text-slate-900 dark:text-white">Crafting Perfection.</h2>
+<ul class="space-y-6">
+<li class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-sage">check_circle</span>
+<p class="text-slate-600 dark:text-slate-400">Traditional stone-pressed method for superior texture and nutrient retention.</p>
+</li>
+<li class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-sage">check_circle</span>
+<p class="text-slate-600 dark:text-slate-400">Pure nigari as a natural coagulant for a clean, non-metallic taste.</p>
+</li>
+<li class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-sage">check_circle</span>
+<p class="text-slate-600 dark:text-slate-400">Small batch production ensuring absolute freshness from bean to block.</p>
+</li>
+</ul>
+<button class="mt-10 bg-sage text-white px-8 py-4 rounded-full font-bold hover:bg-opacity-90 transition-all">
+                    Explore the Process
+                </button>
+</div>
+</div>
+</div>
+</section>
+<footer class="relative bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-32 pb-12">
+<div class="footer-curve">
+<svg data-name="Layer 1" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path class="shape-fill" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5,73.84-4.36,147.54,16.88,218.2,35.26,69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113,2.08,1200,0Z"></path>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+<div class="col-span-1 md:col-span-1">
+<img alt="AUMasta Logo" class="h-12 mb-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZSXRekHTpdSz8dumQjljRVZHJWZnzgUN9ZVnvM6MzQGegZ2mWnUA85z-7OtGJvbaxNjdnewOBqGFm9BBYtCB9C0oCbou_oTosDpEHeggK6Hq_P5WGHyB7c5dcxxAHD5-DQgUXgV1VgauvkRoVW48BxRkUa_kP1QygMa06bgZm6FoP5JC8cE0lBMQMLCWQ399iaqOoxhMY_3yJtkupC6wCHaNcd0H2cY1xma2qXlGFWP06YhZmy__7ThlI2F89ODQidZw6kSBG4PQ"/>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-loose mb-8">
+                    Redefining plant-based nutrition with artisanal care and global vision. Join the movement toward a healthier lifestyle.
+                </p>
+<div class="flex space-x-4">
+<a class="h-11 w-11 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-sage hover:text-white hover:border-sage transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="h-11 w-11 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-sage hover:text-white hover:border-sage transition-all" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+<a class="h-11 w-11 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-sage hover:text-white hover:border-sage transition-all" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-8 uppercase tracking-widest text-xs">Shop</h5>
+<ul class="space-y-5 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-sage transition-colors" href="#">Best Sellers</a></li>
+<li><a class="hover:text-sage transition-colors" href="#">Bundle &amp; Save</a></li>
+<li><a class="hover:text-sage transition-colors" href="#">Gift Cards</a></li>
+<li><a class="hover:text-sage transition-colors" href="#">Subscriptions</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-8 uppercase tracking-widest text-xs">About</h5>
+<ul class="space-y-5 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-sage transition-colors" href="#">Our Mission</a></li>
+<li><a class="hover:text-sage transition-colors" href="#">Farmers</a></li>
+<li><a class="hover:text-sage transition-colors" href="#">Recipes</a></li>
+<li><a class="hover:text-sage transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-8 uppercase tracking-widest text-xs">Newsletter</h5>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-6 leading-relaxed">Stay updated on new launches and healthy living tips.</p>
+<form class="flex group">
+<input class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-l-full px-6 py-3 text-sm focus:ring-sage focus:border-sage transition-all" placeholder="Email address" type="email"/>
+<button class="bg-sage text-white px-6 rounded-r-full hover:bg-opacity-90 transition-colors">
+<span class="material-symbols-outlined">send</span>
+</button>
+</form>
+</div>
+</div>
+<div class="pt-10 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-widest uppercase text-slate-400 font-medium">
+<p>© 2024 AUMasta Global. All rights reserved.</p>
+<div class="flex space-x-8 mt-6 md:mt-0">
+<a class="hover:text-sage transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-sage transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
